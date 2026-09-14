@@ -36,7 +36,7 @@ sqlite3 churn_retention.db < queries.sql   # ou rode cada query separadamente
 |---|----------|--------------------|
 | 1 | Qual a taxa de churn geral da base hoje? | Window function (`ROW_NUMBER`) para pegar o status mais recente |
 | 2 | Como o churn evolui semana a semana? | `LAG()` para comparar status entre semanas |
-| 3 | Qual a curva de retenção por coorte de entrada? | CTEs encadeadas + cohort analysis |
+| 3 | Qual a curva de retenção por corte de entrada? | CTEs encadeadas + cohort analysis |
 | 4 | O churn varia por plano? | JOIN + agregação condicional |
 | 5 | Algum canal de aquisição traz clientes que ficam menos tempo? | Agregação com `MIN`/`MAX` de semana ativa |
 | 6 | Qual o LTV médio por plano? | `SUM` agregado por cliente e depois por plano |
